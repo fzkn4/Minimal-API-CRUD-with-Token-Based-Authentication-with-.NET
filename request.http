@@ -1,0 +1,40 @@
+### Get redirected from / which needs to be an admin to view users list
+GET http://localhost:5024
+Authorization: Bearer <admin_token>
+
+### Admin logs in
+POST http://localhost:5024/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "adminpass"
+}
+
+### Admin creates a new user (replace <admin_token> with the actual token)
+POST http://localhost:5024/users
+Content-Type: application/json
+Authorization: Bearer <admin_token>
+
+{
+    "Id": 5,
+    "username": "newuser",
+    "password": "password123",
+    "fullname": "New User",
+    "email": "newuser@example.com",
+    "Address": "Rome",
+    "AddedBy": "admin",
+    "IsAdmin": false
+}
+
+### Get a specific user (replace <admin_token>)
+GET http://localhost:5024/users/5
+Authorization: Bearer <admin_token>
+
+### Delete a user (replace <admin_token>)
+DELETE http://localhost:5024/users/5
+Authorization: Bearer <admin_token>
+
+### Logout (replace <token>)
+POST http://localhost:5024/logout
+Authorization: Bearer <token>

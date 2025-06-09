@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "al/ddSMD8BFYWHM6VVB9ZGou4Oj5IjV6PCQQDGsrpTg=",
+  "Source": "MinimalAPIwithEndpointFiltering",
+  "BasePath": "_content/MinimalAPIwithEndpointFiltering",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
