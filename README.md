@@ -132,6 +132,7 @@ Content-Type: application/json
 GET http://localhost:5024/users
 Authorization: Bearer <paste_token_here>
 ```
+Or you can just use my `request.http` for testing.
 
 
 ## 📁 Project Structure Highlights
